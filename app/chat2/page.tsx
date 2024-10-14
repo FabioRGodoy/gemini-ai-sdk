@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { readStreamableValue } from "ai/rsc";
-import { continueConversation } from "../actions";
+import { continueConversation, Message } from "../actions";
 
 export default function Home() {
   const [conversation, setConversation] = useState<Message[]>([]);
