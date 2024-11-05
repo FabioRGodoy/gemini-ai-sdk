@@ -10,8 +10,6 @@ export interface Message {
 }
 
 export async function continueConversation(history: Message[]) {
-  "use server";
-
   const stream = createStreamableValue();
   const model = google("models/gemini-1.5-pro-latest");
 
